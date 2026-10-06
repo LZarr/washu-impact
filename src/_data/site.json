@@ -12,8 +12,7 @@
       ]
     },
     { "text": "People", "url": "/people/" },
-    { "text": "Resources", "url": "/resources/" },
-    { "text": "Contact", "url": "/contact/" }
+    { "text": "Resources", "url": "/resources/" }
   ],
   "mailingListUrl": "https://docs.google.com/forms/d/e/1FAIpQLScsYKQd2aGxL5hykUo5XFDaoCSaLa3hpglq7sMmDM_H_3zKJg/viewform",
   "talkToOrganizerUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdETzkJseEb8KbVRPWcRZ8m8BEEOXe4K6TivUkFh8zPhl7Pxw/viewform",
