@@ -8,24 +8,14 @@
       "url": "/get-involved/",
       "children": [
         { "text": "Intro Fellowship", "url": "/get-involved/" },
-        { "text": "In-Depth Fellowship", "url": "/in-depth-fellowship/" },
-        { "text": "Impact Lab", "url": "/impact-lab/" },
-        { "text": "Biorisk Fellowship", "url": "/biorisk-fellowship/" },
-        { "text": "The Precipice Reading Group", "url": "/the-precipice/" }
+        { "text": "Impact Lab", "url": "/impact-lab/" }
       ]
     },
     { "text": "People", "url": "/people/" },
-    {
-      "text": "Resources",
-      "url": "/resources/",
-      "children": [
-        { "text": "Career Mentoring", "url": "/careers/" },
-        { "text": "Resources", "url": "/resources/" },
-        { "text": "Request a Book", "url": "/books/" },
-        { "text": "Jobs & Internships", "url": "/jobs/" },
-        { "text": "EA Organizations", "url": "/ea-organizations/" }
-      ]
-    },
+    { "text": "Resources", "url": "/resources/" },
     { "text": "Contact", "url": "/contact/" }
-  ]
+  ],
+  "mailingListUrl": "https://docs.google.com/forms/d/e/1FAIpQLScsYKQd2aGxL5hykUo5XFDaoCSaLa3hpglq7sMmDM_H_3zKJg/viewform",
+  "talkToOrganizerUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdETzkJseEb8KbVRPWcRZ8m8BEEOXe4K6TivUkFh8zPhl7Pxw/viewform",
+  "instagramUrl": "https://www.instagram.com/washuimpact/"
 }

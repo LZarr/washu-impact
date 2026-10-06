@@ -23,19 +23,19 @@ Output goes to `_site/` (gitignored).
 
 ## Project structure
 
-- `src/_data/` &mdash; structured content as JSON: `site.json` (nav), `people.json` (team roster), `books.json` (book request list), `resources.json` (resources page links).
+- `src/_data/` &mdash; structured content as JSON: `site.json` (nav + sitewide links like the mailing list form, "talk with an organizer" form, and Instagram), `people.json` (team roster), `resources.json` (resources page links).
 - `src/_includes/layouts/base.njk` &mdash; the shared page shell (nav + footer).
 - `src/_includes/partials/` &mdash; nav and footer snippets.
-- `src/*.njk` &mdash; one file per page.
+- `src/*.njk` &mdash; one file per page: `index` (home), `get-involved` (Intro Fellowship), `impact-lab`, `people`, `resources`, `contact`.
 - `src/assets/` &mdash; CSS and all images (images were downloaded from Squarespace's CDN so the site no longer depends on Squarespace staying online).
 
 ### Updating the team roster
 
 Edit `src/_data/people.json`. Each person is `{ name, role, image, bio, email }` (or `calendly` instead of `email`). Add a headshot to `src/assets/images/people/` and reference it by path.
 
-### Updating the book list
+### Updating sitewide links
 
-Edit `src/_data/books.json`, same pattern, images in `src/assets/images/books/`.
+The mailing list signup form, "talk with an organizer" form, and Instagram URL live in `src/_data/site.json` (`mailingListUrl`, `talkToOrganizerUrl`, `instagramUrl`). Update them there if any of those links change.
 
 ## Deployment (GitHub Pages)
 
@@ -65,10 +65,10 @@ This repo is configured to serve at `washuimpact.com` (see `src/CNAME`, which El
 
 Until DNS propagates, the site is also reachable at the default `https://<your-github-username>.github.io/<repo-name>/` URL.
 
+## Pages intentionally dropped from the original site
+
+Per request, these pages from the Squarespace export are **not** in this site: The Precipice Reading Group, In-Depth Fellowship, Biorisk Fellowship, Career Mentoring, Request a Book, Jobs & Internships, EA Organizations, and the old unfilled "Events" placeholder page. Their content and images were removed from the repo too. If any of these need to come back later, they're recoverable from git history (the initial commit).
+
 ## Known gaps / things to double check before going live
 
-- **Social media links** (footer and Contact page) are placeholders (`#`) &mdash; the Squarespace export didn't include these as page content (they're a site-wide setting). Search this repo for `TODO` to find them and fill in your real profile URLs.
-- **Stale dates/deadlines** from the original site were generalized rather than guessed (e.g. a specific past application deadline). Search for `TODO` comments and update with current info.
-- The old "Events" page was Squarespace's unfilled placeholder template content and was intentionally **not** carried over.
-- The book request page uses a simple grid instead of the original's JS carousel, to avoid extra dependencies/maintenance. The Airtable request form embed is unchanged.
-- Double-check all outbound links (job boards, forms, partner orgs) still work &mdash; several were copied as-is from the export and may be a few years old.
+- **Stale dates/deadlines** from the original site were generalized rather than guessed (e.g. a specific past application deadline) on pages that are still in the site. Search for `TODO` comments and update with current info.
