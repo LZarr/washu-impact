@@ -1,0 +1,15 @@
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
+  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
+  eleventyConfig.addWatchTarget("src/assets/css/");
+
+  return {
+    dir: {
+      input: "src",
+      output: "_site",
+      includes: "_includes",
+      data: "_data",
+    },
+    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
+  };
+};

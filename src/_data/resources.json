@@ -1,0 +1,32 @@
+[
+  {
+    "title": "80,000 Hours",
+    "image": "/assets/images/resources/80000-hours-logo.webp",
+    "url": "https://80000hours.org/key-ideas/",
+    "description": "80,000 Hours provides research and support to help students and recent graduates switch into careers that effectively tackle the world's most pressing problems. Apply for career advising today!"
+  },
+  {
+    "title": "EA Internships",
+    "image": "/assets/images/resources/ea-internships.webp",
+    "url": "https://ea-internships.pory.app",
+    "description": "EA Internships connects undergraduates in EA with impactful internship and career opportunities. Check out their internship board to find your next summer internship!"
+  },
+  {
+    "title": "Effective Thesis",
+    "image": "",
+    "url": "https://effectivethesis.org",
+    "description": "What if you could use your thesis to work on solving the most important problems our world faces? Effective Thesis provides free coaching and guidance to students, from undergraduate to PhD level, who want to begin research careers that significantly improve the world."
+  },
+  {
+    "title": "Magnify Mentoring",
+    "image": "/assets/images/resources/magnify-mentoring.webp",
+    "url": "https://www.magnifymentoring.org",
+    "description": "Magnify Mentoring supports, inspires, and connects a global community of people who are motivated to have a positive impact with their careers and lives. Originally aimed exclusively at women, non-binary and trans people of all genders, Magnify Mentoring is now a global network of over 500 community members."
+  },
+  {
+    "title": "Animal Advocacy Careers",
+    "image": "/assets/images/resources/animal-advocacy-careers.webp",
+    "url": "https://www.animaladvocacycareers.org",
+    "description": "Animal Advocacy Careers is an organization that seeks to address the career and talent bottlenecks in the animal advocacy movement, especially the farmed animal movement. AAC provides career services for individuals at all levels of experience with animal advocacy."
+  }
+]

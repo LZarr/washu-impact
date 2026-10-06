@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | url }}">WashU Impact Society</a>
+    <nav class="nav">
+      {% for item in site.nav %}
+      <div class="nav-item">
+        <a class="nav-link" href="{{ item.url | url }}">{{ item.text }}</a>
+        {% if item.children %}
+        <div class="nav-dropdown">
+          {% for child in item.children %}
+          <a href="{{ child.url | url }}">{{ child.text }}</a>
+          {% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

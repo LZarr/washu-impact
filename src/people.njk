@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+title: People
+permalink: /people/
+---
+<section class="section">
+  <div class="wrap">
+    <h2>Meet the Team</h2>
+    <div class="team-grid">
+      {% for person in people %}
+      <div class="team-card">
+        <img src="{{ person.image | url }}" alt="{{ person.name }}" loading="lazy">
+        <h3>{{ person.name }}</h3>
+        {% if person.role %}<div class="role">{{ person.role }}</div>{% endif %}
+        <p>{{ person.bio }}</p>
+        {% if person.email %}<p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}
+        {% if person.calendly %}<p><a href="{{ person.calendly }}" target="_blank" rel="noopener">Schedule a chat on Calendly</a></p>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Resources
+permalink: /resources/
+---
+<section class="hero hero-small">
+  <div class="wrap">
+    <h1>Resources</h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    {% for r in resources %}
+    <div class="resource-item">
+      {% if r.image %}
+      <a href="{{ r.url }}" target="_blank" rel="noopener"><img src="{{ r.image | url }}" alt="{{ r.title }}"></a>
+      {% else %}
+      <div></div>
+      {% endif %}
+      <div>
+        <h3><a href="{{ r.url }}" target="_blank" rel="noopener">{{ r.title }}</a></h3>
+        <p>{{ r.description }}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

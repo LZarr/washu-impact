@@ -1,0 +1,31 @@
+{
+  "title": "WashU Impact Society",
+  "description": "A community of WashU students passionate about doing good.",
+  "nav": [
+    { "text": "Home", "url": "/" },
+    {
+      "text": "Get Involved",
+      "url": "/get-involved/",
+      "children": [
+        { "text": "Intro Fellowship", "url": "/get-involved/" },
+        { "text": "In-Depth Fellowship", "url": "/in-depth-fellowship/" },
+        { "text": "Impact Lab", "url": "/impact-lab/" },
+        { "text": "Biorisk Fellowship", "url": "/biorisk-fellowship/" },
+        { "text": "The Precipice Reading Group", "url": "/the-precipice/" }
+      ]
+    },
+    { "text": "People", "url": "/people/" },
+    {
+      "text": "Resources",
+      "url": "/resources/",
+      "children": [
+        { "text": "Career Mentoring", "url": "/careers/" },
+        { "text": "Resources", "url": "/resources/" },
+        { "text": "Request a Book", "url": "/books/" },
+        { "text": "Jobs & Internships", "url": "/jobs/" },
+        { "text": "EA Organizations", "url": "/ea-organizations/" }
+      ]
+    },
+    { "text": "Contact", "url": "/contact/" }
+  ]
+}

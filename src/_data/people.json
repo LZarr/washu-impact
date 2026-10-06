@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Lily Zarr",
+    "role": "President",
+    "image": "/assets/images/people/lily-zarr.webp",
+    "bio": "I'm a senior studying psychology, entrepreneurship, and Spanish. My interests in EA include government interventions and animal welfare. In my free time, I enjoy reading science fiction, hanging out with friends, and biking around St. Louis. I would love to chat about effective altruism and how you can get involved!",
+    "email": "l.m.zarr@wustl.edu"
+  },
+  {
+    "name": "Grace Tyau",
+    "role": "",
+    "image": "/assets/images/people/grace-tyau.webp",
+    "bio": "I am a senior majoring in American Culture Studies and minoring in Psych and Spanish. I am most interested in animal welfare as a cause area! I would love to chat about anything EA.",
+    "email": "g.r.tyau@wustl.edu"
+  },
+  {
+    "name": "Chanah Park",
+    "role": "",
+    "image": "/assets/images/people/chanah-park.webp",
+    "bio": "Hi! I am a senior at WashU studying Philosophy-Neuroscience-Psychology and Healthcare Management. Within EA, I am most interested in global health and development as well as institutional decision-making. In my free time, I love exploring the local food scene with friends and reading.",
+    "email": "chanah@wustl.edu"
+  },
+  {
+    "name": "Steven Jeon",
+    "role": "",
+    "image": "/assets/images/people/steven-jeon.webp",
+    "bio": "I'm a sophomore at WashU studying political science and economics. My interests in EA include nuclear security and existential risks. In my free time, I enjoy playing fantasy football, walking around campus and listening to music.",
+    "email": "Jeon.steven@wustl.edu"
+  },
+  {
+    "name": "Reed Trende",
+    "role": "",
+    "image": "/assets/images/people/reed-trende.webp",
+    "bio": "I am a 3rd year PhD student studying immunology at WashU. My research focuses on mRNA vaccines against emerging viruses. Outside lab and EA activities, I enjoy running, experiencing the outdoors, and listening to lots of diverse podcasts. Within EA, I'm most knowledgeable about biosecurity, as that is closest to the work I do day-to-day.",
+    "calendly": "https://calendly.com/rftrende/30min"
+  },
+  {
+    "name": "Jacob Woessner",
+    "role": "",
+    "image": "/assets/images/people/jacob-woessner.webp",
+    "bio": "I am a research coordinator in the WUSM Psychiatry Department. My research is primarily focused on linking genetics, brain function, and behavior. Within EA, I am primarily interested in global health, biosecurity, and well-being measurement. In my free time, I enjoy reading and podcasts.",
+    "email": "jacobw@wustl.edu"
+  },
+  {
+    "name": "Jon Bogard",
+    "role": "Advisor",
+    "image": "/assets/images/people/jon-bogard.webp",
+    "bio": "I am an Assistant Professor of Organizational Behavior. I study human judgment and decision-making, with an emphasis on perceptions of risk as well as social, moral, and political psychology. I'm both personally and professionally interested in effective altruism. I'm eager to connect with students who are excited to talk about research or EA, so please reach out!",
+    "email": ""
+  }
+]
