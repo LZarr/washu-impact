@@ -9,10 +9,10 @@ permalink: /people/
     <div class="team-grid">
       {% for person in people %}
       <div class="team-card">
-        <img src="{{ person.image | url }}" alt="{{ person.name }}" loading="lazy">
+        <img src="{{ person.image | url }}" alt="{{ person.name }}" loading="lazy"{% if person.imagePosition %} style="object-position: {{ person.imagePosition }};"{% endif %}>
         <h3>{{ person.name }}</h3>
         {% if person.role %}<div class="role">{{ person.role }}</div>{% endif %}
-        <p>{{ person.bio }}</p>
+        <p>{{ person.bio | safe }}</p>
         {% if person.email %}<p><a href="mailto:{{ person.email }}">{{ person.email }}</a></p>{% endif %}
         {% if person.calendly %}<p><a href="{{ person.calendly }}" target="_blank" rel="noopener">Schedule a chat on Calendly</a></p>{% endif %}
       </div>
