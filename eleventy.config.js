@@ -1,6 +1,13 @@
 module.exports = function (eleventyConfig) {
+  const pathPrefix = process.env.ELEVENTY_PATH_PREFIX || "/";
+
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
-  eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
+  if (pathPrefix === "/") {
+    // CNAME only makes sense when serving from the domain root, i.e. once
+    // the custom domain is live. While serving from the github.io subpath,
+    // skip it so GitHub Pages doesn't try to redirect to an unconfigured domain.
+    eleventyConfig.addPassthroughCopy({ "src/CNAME": "CNAME" });
+  }
   eleventyConfig.addWatchTarget("src/assets/css/");
 
   return {
@@ -10,6 +17,6 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       data: "_data",
     },
-    pathPrefix: process.env.ELEVENTY_PATH_PREFIX || "/",
+    pathPrefix,
   };
 };

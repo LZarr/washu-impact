@@ -31,8 +31,13 @@ jobs:
         run: npm ci
 
       - name: Build site
-        # Custom domain (washuimpact.com) serves from the root, so no path
-        # prefix is needed here.
+        # No custom domain yet, so the site is served at
+        # https://lzarr.github.io/washu-impact/ — build with that subpath
+        # prefix. Once washuimpact.com's DNS + GitHub Pages custom domain are
+        # set up, delete this env block (or set it to "/") so the site builds
+        # for the domain root again.
+        env:
+          ELEVENTY_PATH_PREFIX: /washu-impact/
         run: npx @11ty/eleventy
 
       - name: Upload artifact

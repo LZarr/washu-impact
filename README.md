@@ -47,23 +47,29 @@ A GitHub Actions workflow (`.github/workflows/deploy.yml`) builds the site and d
 
 ## Custom domain (washuimpact.com)
 
-This repo is configured to serve at `washuimpact.com` (see `src/CNAME`, which Eleventy copies into the built site).
+**Current status: not yet live.** The domain isn't registered/pointed yet, so the site is built and served at `https://lzarr.github.io/washu-impact/` for now. The build is set up to toggle between the two modes with one line:
 
-**One-time DNS setup at GoDaddy:**
+- `eleventy.config.js` reads `ELEVENTY_PATH_PREFIX` to decide where the site thinks it's hosted (subpath vs. domain root), and only publishes `src/CNAME` when the prefix is `/` (domain root) &mdash; publishing it while on the `github.io` subpath would get GitHub Pages trying to redirect to a domain that isn't configured yet.
+- `.github/workflows/deploy.yml` currently sets `ELEVENTY_PATH_PREFIX: /washu-impact/` in the build step for this reason.
 
-1. Log into GoDaddy &rarr; **My Products** &rarr; find `washuimpact.com` &rarr; **DNS** (or **Manage DNS**).
-2. Add/replace the DNS records for the root domain with GitHub Pages' IP addresses &mdash; four **A** records, all for host `@`:
-   ```
-   185.199.108.153
-   185.199.109.153
-   185.199.110.153
-   185.199.111.153
-   ```
-   (Remove any existing `A` or `CNAME`/forwarding records on `@` from Squarespace first, if present.)
-3. Add a **CNAME** record for `www` pointing to `<your-github-username>.github.io`.
-4. Back on GitHub &rarr; **Settings &rarr; Pages**, enter `washuimpact.com` under **Custom domain** and save. Wait for DNS to verify (can take up to ~24 hours, often much faster), then check **Enforce HTTPS**.
+**When the domain is registered and ready to go live:**
 
-Until DNS propagates, the site is also reachable at the default `https://<your-github-username>.github.io/<repo-name>/` URL.
+1. In `.github/workflows/deploy.yml`, delete the `env: ELEVENTY_PATH_PREFIX: /washu-impact/` block under "Build site" (or set it to `/`) so the site builds for the domain root and `src/CNAME` gets published again.
+2. **DNS setup at GoDaddy:**
+   - Log into GoDaddy &rarr; **My Products** &rarr; find `washuimpact.com` &rarr; **DNS** (or **Manage DNS**).
+   - Add/replace the DNS records for the root domain with GitHub Pages' IP addresses &mdash; four **A** records, all for host `@`:
+     ```
+     185.199.108.153
+     185.199.109.153
+     185.199.110.153
+     185.199.111.153
+     ```
+     (Remove any existing `A` or `CNAME`/forwarding records on `@` from Squarespace first, if present.)
+   - Add a **CNAME** record for `www` pointing to `lzarr.github.io`.
+3. Push the workflow change (step 1) to `main` so the next deploy publishes `CNAME` again.
+4. On GitHub &rarr; **Settings &rarr; Pages**, enter `washuimpact.com` under **Custom domain** and save. Wait for DNS to verify (can take up to ~24 hours, often much faster), then check **Enforce HTTPS**.
+
+Once live, `https://lzarr.github.io/washu-impact/` should redirect to `https://washuimpact.com/`.
 
 ## Pages intentionally dropped from the original site
 
