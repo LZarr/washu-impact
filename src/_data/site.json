@@ -16,6 +16,7 @@
       "text": "About",
       "url": "/about/",
       "children": [
+        { "text": "About", "url": "/about/" },
         { "text": "Resources", "url": "/resources/" }
       ]
     }
