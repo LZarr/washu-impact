@@ -431,6 +431,10 @@ a:hover {
   border-radius: 4px;
 }
 
+.resource-item h3 a {
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   .resource-item {
     grid-template-columns: 1fr;
