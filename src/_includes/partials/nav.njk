@@ -1,7 +1,10 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="{{ '/' | url }}"><img src="{{ '/assets/images/wis-logo.webp' | url }}" alt="WashU Impact Society"></a>
-    <nav class="nav">
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="primary-nav">
       {% for item in site.nav %}
       <div class="nav-item">
         <a class="nav-link" href="{{ item.url | url }}">{{ item.text }}</a>
@@ -17,3 +20,15 @@
     </nav>
   </div>
 </header>
+<script>
+  (function () {
+    var toggle = document.querySelector(".nav-toggle");
+    var nav = document.getElementById("primary-nav");
+    if (!toggle || !nav) return;
+    toggle.addEventListener("click", function () {
+      var isOpen = nav.classList.toggle("is-open");
+      toggle.classList.toggle("is-active", isOpen);
+      toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+  })();
+</script>
