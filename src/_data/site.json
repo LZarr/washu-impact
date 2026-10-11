@@ -11,11 +11,11 @@
         { "text": "Impact Lab", "url": "/impact-lab/" }
       ]
     },
+    { "text": "Team", "url": "/people/" },
     {
       "text": "About",
       "url": "/about/",
       "children": [
-        { "text": "People", "url": "/people/" },
         { "text": "Resources", "url": "/resources/" }
       ]
     }
