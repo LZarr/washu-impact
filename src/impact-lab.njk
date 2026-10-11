@@ -2,6 +2,10 @@
 layout: layouts/base.njk
 title: Impact Lab
 permalink: /impact-lab/
+photos:
+  - /assets/images/impact-lab/photo-1.jpg
+  - /assets/images/impact-lab/photo-2.jpg
+  - /assets/images/impact-lab/photo-3.jpg
 ---
 <section class="hero hero-small">
   <div class="wrap">
@@ -22,5 +26,12 @@ permalink: /impact-lab/
       <li>Animal Welfare vs. Global Health as a Cause Area</li>
       <li>Biosecurity</li>
     </ul>
+    {% if photos.length %}
+    <div class="photo-grid">
+      {% for photo in photos %}
+      <img src="{{ photo | url }}" alt="Impact Lab" loading="lazy">
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </section>

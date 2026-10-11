@@ -2,6 +2,10 @@
 layout: layouts/base.njk
 title: Intro Fellowship
 permalink: /get-involved/
+photos:
+  - /assets/images/get-involved/photo-1.jpg
+  - /assets/images/get-involved/photo-2.jpg
+  - /assets/images/get-involved/photo-3.jpg
 ---
 <section class="hero hero-small">
   <div class="wrap">
@@ -21,5 +25,12 @@ permalink: /get-involved/
       <li>Want to make a large positive impact through your career or donations, but aren't sure how to do that</li>
     </ul>
     <p>Applications for the spring 2027 fellowship will open in January.</p>
+    {% if photos.length %}
+    <div class="photo-grid">
+      {% for photo in photos %}
+      <img src="{{ photo | url }}" alt="Intro Fellowship" loading="lazy">
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </section>
