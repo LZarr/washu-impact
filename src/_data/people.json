@@ -11,8 +11,15 @@
     "name": "Steven Jeon",
     "role": "",
     "image": "/assets/images/people/steven-jeon.webp",
-    "bio": "I'm a junior at WashU studying political science and economics. My interests in EA include nuclear security and existential risks. In my free time, I enjoy playing fantasy football, walking around campus and listening to music.",
+    "bio": "I'm a junior at WashU studying political science and economics. My interests in EA include nuclear security and existential risks. In my free time, I enjoy walking around campus, writing for the political review and volunteering in the St. Louis area. Feel free to reach out if you have any questions!",
     "email": "Jeon.steven@wustl.edu"
+  },
+  {
+    "name": "Mackenzie Raue",
+    "role": "",
+    "image": "/assets/images/people/mackenzie-raue.jpeg",
+    "bio": "Hi! I'm a junior studying Data Science and Biochemistry, and I run on the XC and track team at WashU. I'm interested in how science, data, and technology can be used to make a positive impact, particularly in areas like global health, biosecurity, and other emerging challenges. I'm still exploring different cause areas and career paths, and I love being part of a community of people who are equally curious about making the world a better place.",
+    "email": ""
   },
   {
     "name": "Hannah McWhan",
